@@ -1,0 +1,79 @@
+html{
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+	box-sizing: inherit;
+}
+
+:root{
+	--container-offset: 15px;
+	--container-width: 1410px;
+
+	--white: #fff;
+}
+
+a{
+	text-decoration: none;
+}
+
+img{
+	max-width: 100%;
+}
+
+@font-face {
+	font-family: "Aerospace";
+	src: url('../fonts/Aerospace.woff2') format('woff2');
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.btn-reset{
+	border: none;
+	padding: 0;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.btn--lg{
+
+}
+
+.btn--sm{
+
+}
+
+body{
+	font-family: "Aerospace";
+	color: var(--white);
+	padding: 0;
+	margin: 0;
+	height: 100vh;
+	background-image: url(../images/space.png);
+}
+
+.container{
+	margin: 0 auto;
+	padding: 0 var(--container-offset);
+	max-width: var(--container-width);
+	display: flex;
+	justify-content: center;
+}
+
+.header{
+	padding: 60px 0;
+	width: 100%;
+}
+
+canvas {
+  border: 1px solid #fff;
+}
+
+h1 {
+	margin: 0px;
+	margin-bottom: 10px;
+	font-size: 64px;
+}
