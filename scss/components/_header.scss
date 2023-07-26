@@ -1,0 +1,11 @@
+.header {
+	padding: 60px 0;
+	width: 100%;
+}
+
+.header__title {
+	user-select: none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+}

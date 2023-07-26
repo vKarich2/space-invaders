@@ -1,93 +1,126 @@
-/* === SETTINGS === */
+:root {
+  --container-offset: 15px;
+  --container-width: 1410px;
+  --white: #fff;
+  --font-family: "Aerospace";
+}
 
-html{
-	box-sizing: border-box;
+@font-face {
+  font-family: "Aerospace";
+  src: url("../../fonts/../fonts/Aerospace.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 *,
 *::before,
-*::after{
-	box-sizing: inherit;
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
-:root{
-	--container-offset: 15px;
-	--container-width: 1410px;
-
-	--white: #fff;
+.page {
+  height: 100%;
+  font-family: var(--font-family, sans-serif);
+  -webkit-text-size-adjust: 100%;
 }
 
-a{
-	text-decoration: none;
+.page__body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100%;
+  color: var(--white);
+  margin: 0;
+  background-image: url(../images/space.png);
 }
 
-img{
-	max-width: 100%;
+img {
+  max-width: 100%;
 }
 
-@font-face {
-	font-family: "Aerospace";
-	src: url('../fonts/Aerospace.woff2') format('woff2');
-	font-display: swap;
-	font-weight: 400;
-	font-style: normal;
+a {
+  text-decoration: none;
 }
 
-.btn-reset{
-	border: none;
-	padding: 0;
-	background-color: transparent;
-	cursor: pointer;
+.is-hidden {
+  display: none !important;
 }
 
-.btn--lg{
-
+.btn-reset {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
 }
 
-.btn--sm{
-
+.list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-body{
-	font-family: "Aerospace";
-	color: var(--white);
-	padding: 0;
-	margin: 0;
-	height: 100vh;
-	background-image: url(../images/space.png);
+.input-reset {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  border: none;
+  border-radius: 0;
+  background-color: #fff;
+}
+.input-reset::-webkit-search-decoration, .input-reset::-webkit-search-cancel-button, .input-reset::-webkit-search-results-button, .input-reset::-webkit-search-results-decoration {
+  display: none;
 }
 
-.container{
-	margin: 0 auto;
-	padding: 0 var(--container-offset);
-	max-width: var(--container-width);
-	display: flex;
-	justify-content: center;
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
 }
 
-/* === HEADER === */
-
-.header{
-	padding: 60px 0;
-	width: 100%;
+.container {
+  margin: 0 auto;
+  padding: 0 var(--container-offset);
+  max-width: var(--container-width);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.header__title{
-	user-select: none;
-	-ms-user-select: none; 
-	-moz-user-select: none; 
-	-webkit-user-select: none;
+.centered {
+  text-align: center;
 }
 
+.header {
+  padding: 60px 0;
+  width: 100%;
+}
 
-/* === GAME === */
+.header__title {
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
 
 canvas {
   border: 1px solid #fff;
 }
 
 h1 {
-	margin: 0px;
-	margin-bottom: 10px;
-	font-size: 64px;
-}
+  margin: 0px;
+  margin-bottom: 10px;
+  font-size: 64px;
+}/*# sourceMappingURL=style.css.map */
